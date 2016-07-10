@@ -1,0 +1,24 @@
+mixin nav-content()
+  ul
+    li: a(href="#kick") Kick-off
+    li: a(href="#about") About
+    li: a(href="#gameloft") Gameloft
+    li: a(href="#distritoweb") Distrito Web
+    li: a(href="#braseva") Braseva
+    //li: a(href="#github") Github
+    li: a(href="#contact") Contact
+
+.mobile-nav
+  +nav-content()
+
+
+header
+  .header-position
+    h1.logo HL
+
+    nav.site-nav
+      +nav-content()
+
+    a(href="mailto:hugol.soul@gmail.com").email-link +email me
+
+    .mobile-nav-toggle: span
